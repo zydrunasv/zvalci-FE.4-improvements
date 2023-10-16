@@ -1,0 +1,49 @@
+@media (width <= 768px) {
+  #app {
+    padding: 0 10px;
+  }
+}
+
+@media (width >= 768px) {
+  #app {
+    margin: auto;
+    padding: 0 100px;
+  }
+}
+
+#app {
+  min-height: 100vh;
+  background-color: #e6f7ff;
+}
+
+.btn {
+  margin: 5px 0;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.input-group-text {
+  margin: 5px 0;
+  background-color: #6497e2;
+  color: white;
+}
+
+.input-group-text:hover {
+  background-color: #4a86d9;
+}
+
+.input-group {
+  margin: 0 10px;
+}
+
+p {
+  margin-bottom: 0.25rem !important;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
