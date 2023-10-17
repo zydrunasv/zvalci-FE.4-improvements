@@ -8,7 +8,6 @@
         src="@/assets/logo.png"
         alt="Click"
         @click="incrementCounter"
-        class="clickable-image"
       />
       <p class="game">
         How many times can you press on the pig in 10 secs?
@@ -24,7 +23,6 @@
 <script setup>
 import { ref } from 'vue';
 
-const showGame = ref(false);
 const clickCount = ref(0);
 const timeLeft = ref(10);
 const clicked = ref(false);
@@ -36,7 +34,6 @@ const startTimer = () => {
       timeLeft.value--;
     } else {
       clearInterval(timer);
-      showGame.value = false;
     }
   }, 1000);
 };
@@ -46,7 +43,6 @@ const incrementCounter = () => {
   setTimeout(() => (clicked.value = false), 125);
 
   if (clickCount.value === 0) {
-    showGame.value = true;
     startTimer();
   }
 
